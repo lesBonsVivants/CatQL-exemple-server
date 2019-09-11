@@ -1,0 +1,28 @@
+type Query {
+    owners(owner_id: ID, first_name: String, last_name: String): [Owner]
+    cats(cat_id: ID, name: String, genre: String): [Cat]
+}
+
+type Owner {
+    owner_id: ID
+    first_name: String
+    last_name: String
+}
+
+type Cat {
+    cat_id: ID
+    name: String
+    genre: String
+    owner: Owner
+}
+
+
+type Mutation {
+  addCat(cat_id: ID, name: String, genre: String): Cat
+  updateCat(cat_id: ID!, name: String, genre: String): Cat
+  deleteCat(cat_id: ID!): Cat
+
+  addOwner(owner_id: ID, first_name: String, last_name: String): Owner
+  updateOwner(owner_id: ID!, first_name: String, last_name: String): Owner
+  deleteOwner(owner_id: ID!): Owner
+}

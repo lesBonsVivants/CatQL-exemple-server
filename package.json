@@ -1,0 +1,35 @@
+{
+  "name": "catql-exemple-server",
+  "version": "1.0.0",
+  "description": "Exemple de projet graphQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesBonsVivants/CatQL-exemple-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesBonsVivants/CatQL-exemple-server/issues"
+  },
+  "homepage": "https://github.com/lesBonsVivants/CatQL-exemple-server#readme",
+  "dependencies": {
+    "apollo-server-koa": "^2.9.3",
+    "graphql": "^14.5.4",
+    "graphql-tools": "^4.0.5",
+    "knex": "^0.19.4",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^5.1.0",
+    "koa-router": "^7.4.0",
+    "pg": "^7.12.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0"
+  }
+}
